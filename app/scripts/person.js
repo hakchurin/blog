@@ -1,6 +1,6 @@
 
 import Backbone from 'backbone';
-import $Inforation from './personForm';
+import $Information from './personForm';
 
 const Info = Backbone.Model.extend({
   urlRoot: 'https://tiny-za-server.herokuapp.com/collections/hakchurinblog',

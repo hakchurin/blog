@@ -24,19 +24,16 @@
      </div>
    `);
 
-
      $information.find('input[type="submit"]').on('click', function(evt) {
          evt.preventDefault();
          var info = new Info({
              firstName: $('.first-name').val(),
              lastName: $('.last-name').val(),
              address: $('.address').val()
-
-         });
+           });
          info.save();
      });
-     $('.container').append($information);
+    //  $('.container').append($information);
      return $information;
  }
- console.log(renderPeople);
  export default renderPeople;

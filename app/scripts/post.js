@@ -4,10 +4,8 @@ import Backbone from 'backbone';
 
 const Write = Backbone.Model.extend({
   urlRoot: 'https://tiny-za-server.herokuapp.com/collections/hakchurinblog',
-  default: {
-    //title: $('.post-title').val(),
-    //body: $('textarea').val()
-  }
+
+  idAttribute: '_id'
 });
 
 export default Write;
